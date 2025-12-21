@@ -9,7 +9,7 @@ This project presents my profile, services, and projects with a clean and profes
 
 ## 🌐 Live Demo
 
-👉 https://portfolio-faryal.netlify.app/
+👉 [Portfolio Live](https://portfolio-faryal.netlify.app/)
 
 ---
 
@@ -25,23 +25,21 @@ It focuses on simplicity, responsiveness, and usability across different devices
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **jQuery** – used for DOM manipulation
-
-- ## 📦 External CDNs Used
-  ```html 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+- **jQuery** – for DOM manipulation
 - **Font Awesome** – icons via CDN
+- **Google Fonts** – Poppins
+- **Netlify** – deployment & hosting
 
-- ## 📦 External CDNs Used
-  ```html
+---
+
+## 📦 External CDNs Used
+
+```html
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-- **Google Fonts** – Poppins
-
-  ## 📦 External CDNs Used
-
- ```html
-
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-- **Netlify** – deployment & hosting
+<!-- Google Fonts: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
