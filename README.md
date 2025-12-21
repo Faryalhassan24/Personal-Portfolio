@@ -28,6 +28,7 @@ It focuses on simplicity, responsiveness, and usability across different devices
 - **jQuery** – for DOM manipulation
 - **Font Awesome** – icons via CDN
 - **Google Fonts** – Poppins
+- **Typed.js** – dynamic typing text animation
 - **Netlify** – deployment & hosting
 
 ---
@@ -43,3 +44,6 @@ It focuses on simplicity, responsiveness, and usability across different devices
 
 <!-- Google Fonts: Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!-- Typed.js -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
