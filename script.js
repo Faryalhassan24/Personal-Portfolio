@@ -46,6 +46,7 @@ function filterProjects(category, clickedButton) {
 
 $(document).ready(function () {
 
+
     $('#seeMoreBtn').show();
     $('#showlessBtn').hide();
 
@@ -60,7 +61,17 @@ $(document).ready(function () {
         $('#seeMoreBtn').show();
         $('#showlessBtn').hide();
     });
+
+    $(".fa-bars").click(function () {
+        $("nav ul").addClass("active");
+    });
+
+    $(".fa-circle-xmark").click(function () {
+        $("nav ul").removeClass("active");
+    });
+
 });
+
 
 var typed = new Typed(".header-text p", {
     strings: ["Full Stack Developer", "Data Analyst", "PHP Developer"],
@@ -69,20 +80,8 @@ var typed = new Typed(".header-text p", {
     loop: true
 });
 
-$(document).ready(function() {
+AOS.init({
+    duration: 800,
+    once: true
 
-    $(".fa-bars").click(function() {
-        $("nav ul").addClass("active");
-    });
-
-    
-    $(".fa-circle-xmark").click(function() {
-        $("nav ul").removeClass("active");
-    });
-});
-
-
-
-
-
-
+})
