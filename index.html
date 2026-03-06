@@ -314,3 +314,307 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href=""><h3 class="logo"><span>FH</span></h3></a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-circle-xmark"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+
+            <div class="header-text">
+                <h2 class="intro-text">Hello, Welcome to My Portfolio</h2>
+                <h2> I'm <span>Faryal Hassan</span></h2><br>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div data-aos="fade-right" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> <img src="Images/Avatar.png"> </div>
+                <div class="about-col-2">
+                    <div class="sub-title">About Me</div>
+                    <p> I'm a final-year Computer Science student at <b>Iqra University</b>, passionate about exploring
+                        the fields of <b>Web Development</b> and <b>Data Analytics</b>. With a strong foundation in
+                        programming and analytical thinking, I enjoy turning data into meaningful insights and building
+                        creative, user-friendly web solutions. I'm currently seeking internship opportunities to apply
+                        my skills, gain hands-on experience, and contribute to impactful projects. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Development</span><br>
+                                HTML, CSS, JavaScript, PHP, Bootstrap, MySQL
+                            </li>
+
+                            <li>
+                                <span>Data Analysis</span><br>
+                                PostgreSQL, Power BI, Excel, Python (Pandas, NumPy)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Iqra University (2022 - Present)</span> <br>Bachelor's in Computer Science - CGPA
+                                3.77</li>
+                            <li> <span>BIEK (2019 - 2021) </span><br>Intermediate (Pre-Engineering) - Grade A+</li>
+                            <li> <span>BSEK (2017 - 2019) </span><br>Matriculation (Science) - Grade A</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div   data-aos="fade-left" id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div> <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>I create clean and responsive websites using HTML, CSS, JavaScript, PHP, and MySQL.
+                        Passionate about learning and building practical web solutions.</p>
+                </div>
+                <div> <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Aspiring data analyst with a strong interest in turning data into insights.
+                        Familiar with Excel, SQL, Python, and data visualization tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  data-aos="fade-right"id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+
+
+            <div class="project-tabs">
+                <button class="tab-btn active" onclick="filterProjects('all',this)">All</button>
+                <button class="tab-btn" onclick="filterProjects('web',this)">Web Development</button>
+                <button class="tab-btn" onclick="filterProjects('data',this)">Data Analyst</button>
+            </div>
+
+            <div class="work-list">
+
+                <div class="work-card web show">
+                    <h3>Social Media Platform</h3>
+                    <p>
+                        A dynamic social media platform that allows users to create accounts, share posts,
+                        and interact through likes and comments using secure backend integration.
+                    </p>
+                    <span class="tech">HTML • CSS • BOOTSTRAP • JS • PHP • MySQL</span><br>
+                    <a href="https://github.com/Faryalhassan24/Social-media-Platform">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="work-card web show">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>
+                        An interactive browser-based Tic Tac Toe game featuring two-player gameplay,
+                        win and draw detection, and a responsive user interface.
+                    </p>
+                    <span class="tech">HTML • CSS • JS</span><br>
+                    <a href="https://github.com/Faryalhassan24/tic-tac-toe-game">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="work-card data show">
+                    <h3>Amazon Prime Video Dashboard</h3>
+                    <p>
+                        An interactive Power BI dashboard designed to analyze Amazon Prime Video data,
+                        focusing on content distribution, genres, and rating trends.
+                    </p>
+                    <span class="tech">Power BI • Data Analysis</span><br>
+                    <a href="https://github.com/Faryalhassan24/Amazon-prime-video-Dashboard">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- Hidden  -->
+
+                <div class="work-card web hidden">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>
+                        A classic Rock Paper Scissors web game where users play against the computer,
+                        featuring real-time results, score tracking, and interactive gameplay.
+                    </p>
+                    <span class="tech">HTML • CSS • JS</span><br>
+                    <a href="https://github.com/Faryalhassan24/Rock-Paper-Scissors-Game">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="work-card data hidden">
+                    <h3>E-Commerce Sales Dashboard</h3>
+                    <p>
+                        A Power BI dashboard developed to track e-commerce sales performance,
+                        revenue trends, and customer purchasing behavior.
+                    </p>
+                    <span class="tech">Power BI • Data Analysis</span><br>
+                    <a href="https://github.com/Faryalhassan24/E-Commerce-Sales-Dashboard">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="work-card web hidden">
+                    <h3>Resume Clone Website</h3>
+                    <p>
+                        A clean and responsive personal resume website designed to present education,
+                        experience, and projects in a simple and professional layout.
+                    </p>
+                    <span class="tech">HTML • CSS</span><br>
+                    <a href="https://github.com/Faryalhassan24/Resume-Clone-website">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="work-card data hidden">
+                    <h3>Book Store Management System</h3>
+                    <p>
+                        A database-driven management system designed to handle book records, customer details,
+                        sales transactions, and inventory management in an organized and efficient way.
+                    </p>
+                    <span class="tech">PostgreSQL • Database Management</span><br>
+                    <a href="https://github.com/Faryalhassan24/Book-Store-Management-System-using-PostgreSQL">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+
+                <div class="work-card data hidden">
+                    <h3>Loan Approval Prediction</h3>
+                    <p>
+                        A machine learning project that predicts loan approval outcomes using historical data,
+                        focusing on preprocessing, exploratory analysis, and model evaluation.
+                    </p>
+                    <span class="tech">Python • ML Libraries • Pandas</span><br>
+                    <a href="https://github.com/Faryalhassan24/Loan-approval-Prediction-system">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="work-card data hidden">
+                    <h3>Netflix Titles Analysis</h3>
+                    <p>
+                        This repository analyzes the Netflix dataset to explore patterns in movies and TV shows,
+                        including content distribution, duration trends, ratings, and top content-producing countries.
+                    </p>
+                    <span class="tech">Python • Data Analysis</span><br>
+                    <a href="https://github.com/Faryalhassan24/Netflix-Titles-using-python">
+                        <i class="fa fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <button class="btn" id="seeMoreBtn">See More</button>
+            <button class="btn" id="showlessBtn">Show Less</button>
+
+
+        </div>
+    </div>
+
+
+    <div  data-aos="fade-left" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p> <i class="fa-regular fa-message"></i> faryalhassan2411@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0308-8251237</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/faryal-hassan-768326279/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/Faryalhassan24" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/faryal.hassan.822064/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <a href="Faryal-Hassan-Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name">
+                        <input type="email" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 Faryal Hassan. All Rights Reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwkq2RbEQebCt7zSyabavw-69IYxq_52K0ViHfxBoA6HwNWHVzsWbfBgL5IKG02osouRA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset();
+                }
+
+                )
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
